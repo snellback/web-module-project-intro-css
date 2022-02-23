@@ -1,3 +1,5 @@
+/*--------------------------------- Reset ------------------------------------*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,34 +49,127 @@ table {
 	border-spacing: 0;
 }
 
-/*---------------------------------------------------------------------*/
+/*--------------------------------- General ------------------------------------*/
 
 * {
-
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid red; */
 }
 
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
-/*--------------------------------- Buttons ------------------------------------*/
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 6rem;
+}
+
+section {
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*--------------------------------- Nav ------------------------------------*/
+
+nav {
+    padding: 3% 0;
+}
+
+nav button {
+    display: inline-block;
+    padding: .7% 0%;
+    width: 14.5%;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.2rem;
+}
 
 .nav-1 {
-    color: white;
     background-color: #FF764E;
+    margin-left: 15%;
 }
 
 .nav-2 {
-    color: white;
     background-color: #5ED3EB;
+    margin: 0 13%;
 }
 
 .nav-3 {
-    color: white;
     background-color: #FFCD69;
 }
+
+/*--------------------------------- Header ------------------------------------*/
+
+.main-header {
+    position: relative;
+}
+
+.main-header div {
+    display: inline-block;
+}
+
+.header-img {
+    width: 26%;
+    margin-left: 3.2%;
+}
+
+.header-img img {
+    border-radius: 50%;
+}
+
+.header-text {
+    width: 75%;
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    top: 35px;
+}
+
+/*--------------------------------- About / Info ------------------------------------*/
 
 .about {
     color: white;
     background-color: #DDB9A3;
+    padding: 2%;
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.info div {
+    width: 30%;
+    margin: 5% auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*--------------------------------- Footer ------------------------------------*/
+
+.bg-img {
+    background-image: url('assets/footer_img.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+}
+
+footer {
+    background-color: #F9E7DC;
 }
